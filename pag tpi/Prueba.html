@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper 3D</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+    <style>
+        /* Estilo del contenedor Swiper */
+        swiper-container {
+          width: 80%;
+          height: 400px;
+          margin: auto;
+        }
+    
+        /* Ajuste de las imágenes en cada slide */
+        swiper-slide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #eee;
+        }
+    
+        swiper-slide img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: cover;
+          border-radius: 10px; /* Opcional, agrega bordes redondeados */
+        }
+      </style>
+
+  <!-- Contenedor Swiper -->
+  <swiper-container
+    effect="cube"
+    pagination="true"
+    navigation="true"
+    loop="true"
+    style="width: 80%; height: 400px; margin: auto;"
+  >
+    <swiper-slide class="slide">
+        <Img src="images/imagen 1.jpg"></Img>
+    </swiper-slide>
+    <swiper-slide class="slide">
+        <Img src="images/Imagen2.jpg"></Img>
+    </swiper-slide>
+    <swiper-slide class="slide">
+        <Img src="images/Imagen3.jpg"></Img>
+    </swiper-slide>
+    <swiper-slide class="slide">
+        <Img src="images/imagen4.jpg"></Img>
+    </swiper-slide>
+  </swiper-container>
+
+  <!-- Script de Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Esta etiqueta configura el "viewport", que es el área visible de una 
+    página web en un dispositivo,mientras que lo que esta dentro de content se asegura que el ancho se ajuste al tamaño del dispositivo, ademas de
+    que el nivel de zoom que aplica es el predeterminado 1.0-->
+    <title>Escuela Provincial Dr.Ernesto Guevara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Sobre  Nosotros.css">
+</head>
+
+<body>
+    <header><!--encabezado aqui se encuentra los enlaces a los distintos apartados de la pagina-->
+        <div class="contenedor0">
+            <img class="logo" src="images/LogoPaginaWeb.png">
+            <div>
+                <a href="inicio.html">Inicio</a>
+                <a href="sobre nosotros.html">Sobre Nosotros</a>
+                <a href="Normas.html">Normas</a>
+                <a href="Contacto.html">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section><!--Seccion 1: donde se explica la historia de la escuela-->
+        <hr>
+        <h2 class="subtitulo1">Historia del Colegio</span></h2>
+        <p class="descripcion">El Colegio Dr.Ernesto Guevara comenzó como EPEM 4, en el antiguo edificio ubicado en
+            Mosconi 655, actual Cent35 y Piedrabuena (Comercio 1), siendo lugar de las personas "rechazadas y
+            expulsadas" por el resto de instituciones, por lo que el comportamiento de los alumnos era bastante regular,
+            y tras mucho esfuerzo por parte de los docentes, a la vez que el nuevo edificio, permitió a la Guevara
+            llegar a donde está hoy en día, siendo la escuela por excelencia en el área de la informática.</p>
+    </section>
+
+    <section class="Seccion">
+        <hr>
+        <h2 class="subtitulo2"><span>Directivos del Colegio</span></h2>
+        <div class="contenedor1">
+            <div class="contenedor-persona">
+                <img class="walter" src="images/walter.jpg" alt="Walter Wasniak">
+                <p class="nombre1">Director<br>Walter Wasniak</p>
+            </div>
+            <div class="contenedor-persona">
+                <img class="ale" src="images/ale.jpg" alt="Alejandra Gutierrez">
+                <p class="nombre2">Vice-directora<br>del Turno Tarde<br>Alejandra Gutierrez</p>
+            </div>
+            <div class="contenedor-persona">
+                <img class="monica" src="images/monicanavarro.jpg" alt="Monica Navarro">
+                <p class="nombre3">Vice-directora<br>del Turno Mañana<br>Monica Navarro</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <hr>
+        <h2 class="subtitulo3"><span>Imagenes de las practicas que realizan los alumnos</span></h2>
+
+        <!-- Contenedor Swiper -->
+        <swiper-container
+        effect="cube"
+        pagination="true"
+        navigation="true"
+        loop="true"
+        style="width: 80%; height: 400px; margin: auto;"
+        >
+        <swiper-slide class="slide">
+            <img src="images/imagen 1.jpg" class="imagen" alt="Imagen 1">
+        </swiper-slide>
+        <swiper-slide class="slide">
+            <img src="images/Imagen2.jpg" class="imagen" alt="Imagen 2">
+        </swiper-slide>
+        <swiper-slide class="slide">
+            <img src="images/Imagen3.jpg" class="imagen" alt="Imagen 3">
+        </swiper-slide>
+        <swiper-slide class="slide">
+            <img src="images/imagen4.jpg" class="imagen" alt="Imagen 4">
+        </swiper-slide>
+        <swiper-slide class="slide">
+            <img src="images/imagen 5.jpg" class="imagen" alt="Imagen 4">
+        </swiper-slide>
+        <swiper-slide class="slide">
+            <img src="images/imagen 6.jpg" class="imagen" alt="Imagen 4">
+        </swiper-slide>
+        </swiper-container>
+
+        <!-- Script de Swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        
+    </section>
+    
+    <footer>
+        <p class="telefono">Telefono:<br>2964-300531</p>
+        <p class="ubicacion">Ubicacion:<br>Rio Candelaria 3460</p>
+        <p class="correo">Correo:<br>cpdeguevara.sec@tdf.com.ar</p>
+        <p>Twilight Owl Electronic & Service &copy; 2024</p>
+    </footer>
+</body>
+
+</html>

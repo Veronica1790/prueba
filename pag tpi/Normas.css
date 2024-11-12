@@ -1,0 +1,344 @@
+html{
+    font-family: "Montserrat"
+}
+body{
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section{
+    margin: 30px;
+}
+
+/*Encabezado*/
+.contenedor0 {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacia la logo y los enlaces */
+    padding: 10px;
+    margin-top: 1%;
+}
+header {
+    background-color: white;
+}
+.logo {
+    display: block;
+    width: 17%;
+    max-width: 600px; /* Limita el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+header a {
+    color: rgb(18, 31, 219);
+    display: inline-flex;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 20px;
+    text-decoration: none; 
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+header a:hover {
+    background-color: rgb(175, 22, 22); /* Fondo rojo al pasar el mouse */
+    color: white; /* Texto blanco para mejor contraste */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: underline; /* Subrayado */
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contenedor0 {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center;
+    }
+    .logo {
+        width: 50%; /* Ajusta el tamaño de la logo en pantallas pequeñas */
+        margin: 0 auto; /* Centra la imagen */
+    }
+    header a {
+        font-size: 18px; /* Reduce el tamaño de la fuente de los enlaces */
+        padding: 5px 10px; /* Ajusta el padding para ahorrar espacio */
+    }
+}
+@media (max-width: 480px) {
+    .logo {
+        width: 70%; /* Reduce aún más la logo en pantallas muy pequeñas */
+    }
+    header a {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+}
+/*Introduccion a las Normas*/
+section ol{
+    font-size: 20px;
+}
+
+.subtitulo1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 35px;
+}
+
+/*Seccion 1: Normas equipo de gestion*/
+.contenedor1{
+    display: flex;
+    margin: 5% 0% 5% 0%;
+}
+.gestion{
+    width: 260px ;
+    border-radius: 50%;
+    display: block;
+}
+.equipogestion{
+    text-decoration: underline;
+    font-size: 30px;
+}
+.Normas1{
+    text-align: justify;
+    font-size: 18px; /* Tamaño de fuente inicial para pantallas grandes */
+}
+/* Media Query para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    .subtitulo1 {
+        font-size: 28px; /* Ajusta el tamaño del subtítulo */
+    }
+
+    .contenedor1 {
+        flex-direction: column; /* Cambia a columna en pantallas medianas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    h4 {
+        font-size: 24px; /* Ajusta el tamaño de h4 */
+    }
+
+    div p {
+        font-size: 18px; /* Ajusta el tamaño del párrafo */
+    }
+}
+
+/* Media Query para pantallas pequeñas (teléfonos) */
+@media (max-width: 480px) {
+    .subtitulo1 {
+        font-size: 24px; /* Reduce aún más el tamaño del subtítulo */
+    }
+
+    h4 {
+        font-size: 20px; /* Reduce el tamaño de h4 */
+    }
+
+    div p {
+        font-size: 16px; /* Reduce el tamaño del párrafo */
+    }
+
+    .contenedor1 {
+        gap: 10px; /* Reduce el espacio entre los elementos */
+        padding: 0 10px; /* Agrega un pequeño padding lateral */
+    }
+}
+
+/*Seccion 2: Normas equipo docente*/
+.contenedor2{
+    display: flex;
+    margin: 5% 0% 5% 0%;
+}
+.equipodocente{
+    text-decoration: underline;
+    font-size: 30px;
+}
+.docentes{
+    width: 260px ;
+    border-radius: 50%;
+    display: block;
+}
+.Normas2{
+    text-align: justify;
+    font-size: 18px; /* Tamaño de fuente inicial para pantallas grandes */
+}
+/* Media Query para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    .contenedor2 {
+        flex-direction: column; /* Cambia a columna en pantallas medianas */
+        align-items: center; /* Centra los elementos */
+        margin: 5% 2%; /* Reduce los márgenes laterales */
+    }
+
+    .equipodocente {
+        font-size: 24px; /* Ajusta el tamaño del texto */
+    }
+
+    .docentes {
+        width: 200px; /* Reduce el tamaño de las imágenes */
+    }
+
+    .Normas2 {
+        padding: 0 15px; /* Agrega un pequeño padding para mejorar la legibilidad */
+    }
+}
+
+/* Media Query para pantallas pequeñas (teléfonos) */
+@media (max-width: 480px) {
+    .contenedor2 {
+        margin: 5% 0; /* Elimina el margen lateral */
+    }
+
+    .equipodocente {
+        font-size: 20px; /* Reduce aún más el tamaño del texto */
+    }
+
+    .docentes {
+        width: 150px; /* Reduce aún más el tamaño de las imágenes */
+    }
+
+    .Normas2 {
+        padding: 0 10px; /* Reduce el padding para mantener el texto centrado */
+    }
+}
+
+/*Seccion 3: Normas Alumnos*/
+.contenedor3{
+    display: flex;
+    margin: 5% 0% 5% 0%;
+}
+.equipoalumno{
+    text-decoration: underline;
+    font-size: 30px;
+}
+.alumnos{
+    width: 260px ;
+    border-radius: 50%;
+    display: block;
+}
+.Normas3{
+    text-align: justify;
+    font-size: 18px; /* Tamaño de fuente inicial para pantallas grandes */
+}
+/* Media Query para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    .contenedor3 {
+        flex-direction: column; /* Cambia a columna en pantallas medianas */
+        align-items: center;
+        margin: 5% 2%; /* Reduce los márgenes laterales */
+    }
+
+    .equipoalumno {
+        font-size: 24px; /* Reduce el tamaño del encabezado */
+    }
+
+    .alumnos {
+        width: 200px; /* Reduce el tamaño de las imágenes */
+    }
+
+    .Normas3 {
+        font-size: 16px; /* Reduce el tamaño de la fuente del texto */
+        padding: 0 15px; /* Agrega un pequeño padding para mejorar la legibilidad */
+    }
+}
+
+/* Media Query para pantallas pequeñas (teléfonos) */
+@media (max-width: 480px) {
+    .contenedor3 {
+        margin: 5% 0; /* Elimina el margen lateral */
+    }
+
+    .equipoalumno {
+        font-size: 20px; /* Reduce aún más el tamaño del encabezado */
+    }
+
+    .alumnos {
+        width: 150px; /* Reduce aún más el tamaño de las imágenes */
+    }
+
+    .Normas3 {
+        font-size: 14px; /* Reduce aún más el tamaño de la fuente */
+        padding: 0 10px; /* Reduce el padding para mantener el texto centrado */
+    }
+}
+
+/*Seccion 4: Normas Padres/Tutor*/
+.contenedor4{
+    display: flex;
+    margin: 5% 0% 5% 0%;
+}
+.equipotutor{
+    text-decoration: underline;
+    font-size: 30px;
+}
+.tutores{
+    width: 260px ;
+    border-radius: 50%;
+    display: block;
+}
+.Normas4{
+    text-align: justify;
+    font-size: 18px; /* Tamaño de fuente inicial para pantallas grandes */
+}
+/* Media Query para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    .contenedor4 {
+        flex-direction: column; /* Cambia a columna en pantallas medianas */
+        align-items: center;
+        margin: 5% 2%; /* Reduce los márgenes laterales */
+    }
+
+    .equipotutor {
+        font-size: 24px; /* Reduce el tamaño del encabezado */
+    }
+
+    .tutores {
+        width: 200px; /* Reduce el tamaño de las imágenes */
+    }
+
+    .Normas4 {
+        font-size: 16px; /* Reduce el tamaño de la fuente del texto */
+        padding: 0 15px; /* Agrega un pequeño padding para mejorar la legibilidad */
+    }
+}
+
+/* Media Query para pantallas pequeñas (teléfonos) */
+@media (max-width: 480px) {
+    .contenedor4 {
+        margin: 5% 0; /* Elimina el margen lateral */
+    }
+
+    .equipotutor {
+        font-size: 20px; /* Reduce aún más el tamaño del encabezado */
+    }
+
+    .tutores {
+        width: 150px; /* Reduce aún más el tamaño de las imágenes */
+    }
+
+    .Normas4 {
+        font-size: 14px; /* Reduce aún más el tamaño de la fuente */
+        padding: 0 10px; /* Reduce el padding para mantener el texto centrado */
+    }
+}
+
+section{
+   margin-bottom: 5%; 
+}
+/*Apartado de footer*/
+footer {
+    display: flex;
+    flex-direction: row; /* Organiza los elementos en una fila */
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    padding: 20px; /* Espacio interno del footer */
+    background-color: #333333; /* Color de fondo del footer */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+}
+
+footer p {
+    color: white;
+    flex: 1; /* Hace que cada elemento p ocupe el mismo espacio disponible */
+    margin: 10px; /* Espacio alrededor de cada párrafo */
+    min-width: 150px; /* Ancho mínimo para mantener la legibilidad */
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
+        text-align: center; /* Centra el texto de cada párrafo */
+    }
+}
